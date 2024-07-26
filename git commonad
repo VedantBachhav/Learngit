@@ -1,0 +1,62 @@
+clone : used to clone repository from github to local machine.
+cd : used to change the working directory
+status : display the status of the code 1. untracked 2. modified 3. staged 4. unmodified 
+ls & ls -a : display the hidden files using -a  and ls used for only list files.
+
+After modity the file:  we need two step process first add file and commit file.
+
+stagged state means after add command we wil run.
+
+push : it used to upload the local repo content to remote repository.
+      : git push origin main.
+steps : after make change 
+        add the file for staged.  -- git add . or file name 
+        then commit the file to the remote repository  -- git commit -m "message"
+        after that push the file to the git (net is on when we push.)
+
+
+init : used to create a new repository
+  git init 
+  git remote add origin <-link->
+  git remote -v (to verify remote)
+  git branch  (to check branch)
+  git branch -M main (to rename branch)
+  git push origin main
+      #  git push -u origin main  -- when we work on same project for long tiem then used -u for avoid repeted time writing.
+
+      #git remote set-url origin https://github.com/VedantBachhav/Learngit.git -- used for chagne the repo when anotehr is already available.
+
+Git brances: 
+git branch : used for check we are on which branch
+git branch  -m main (to rename branch)
+git checkout -branch name- (for navigation)
+git checkout -b <new branch name> (to create new branch)
+git branch -d <branch name> (to delete branch)
+ 
+
+git pull command : 
+git pull origin <branch name>
+#used to fetch and download content from a remote repository and immediately update the local repo to match that content.
+
+Resolving Merge conflicts  : An event that takes place when git is unable to automatically resolver difference in code between two commits.
+.. git diff main ; differentiate with one branch to main branch.
+
+# Undoing changes 1 :
+case 1 : staged changes : 
+      git reset < file Name>
+      git reset 
+case 2 : committed changes (for one commit)
+      git reset HEAD `tail 1
+
+case 3 :commited changes (for many commits)
+      git reset< commit hash>
+      git reset --hard <commit hash>
+
+
+git reset --hard  f8c64a2d47bae31957d7804cb7aae66acb17acf0 (hash or log of changes)
+the above command is used for reset the changes in vs code also.
+
+Fork : A fork is a new repository that shares code and visibility settings with the original "upstream" repository.
+
+Fork is like a rough copy of a code.
+
